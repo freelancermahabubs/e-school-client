@@ -14,14 +14,14 @@ const NavBar = () => {
       <div className="bg-gray-200 -mt-6 h-12">
         <div className="flex justify-center container mx-auto">
           <div className="">
-            <ul className="flex items-center gap-x-4 mt-2 sm:text-sm md:text-xl">
+            <ul className="flex items-center gap-x-4 mt-2 sm:text-sm md:text-xl ">
               {/* ... Your other menu items ... */}
               <a
                 href="/"
                 className="flex items-center gap-2 bg-[#6EBB09] p-1 rounded-md text-white font-semibold px-3">
                 <AiOutlineHome size={20} /> প্রচ্ছদ
               </a>
-              <li className="relative group  menu-item ">
+              <li className="relative group  menu-item z-[500] ">
                 <a className="rounded-md py-1 px-3" onClick={toggleDropdown}>
                   পরিচিতি
                 </a>
@@ -29,7 +29,7 @@ const NavBar = () => {
                   className={`absolute left-0 mt-2  bg-[#FF6A18] border border-gray-300 shadow-lg transition-all duration-300 transform scale-0 group-hover:scale-100 w-[300px] ${
                     isDropdownOpen ? "scale-100" : ""
                   }`}>
-                  <li className="menu-item py-2 px-3">
+                  <li className="menu-item py-2 px-3 z-[500]">
                     <a href="https://gripetech.com/demo/introduction/">
                       এক নজরে পরিচিতি
                     </a>
@@ -37,7 +37,7 @@ const NavBar = () => {
                   {/* Add more submenu items if needed */}
                 </ul>
               </li>
-              <li className="relative group menu-item ">
+              <li className="relative group menu-item z-[500]">
                 <a className="rounded-md py-1 px-3" onClick={toggleDropdown}>
                   জনবল
                 </a>
@@ -57,7 +57,7 @@ const NavBar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="relative group  menu-item">
+              <li className="relative group  menu-item z-[500]">
                 <a className=" rounded-md py-1 px-3 " onClick={toggleDropdown}>
                   শিক্ষার্থী
                 </a>
@@ -91,7 +91,7 @@ const NavBar = () => {
               <li className="relative group cursor-pointer">
                 <a className="menu-item p-1">ছুটির দিন</a>
               </li>
-              <li className="relative group  menu-item">
+              <li className="relative group  menu-item z-[500]" >
                 <a className=" rounded-md py-1 px-3 " onClick={toggleDropdown}>
                   ভর্তি আবেদন
                 </a>
@@ -99,7 +99,7 @@ const NavBar = () => {
                   className={`absolute left-0 mt-2  bg-[#FF6A18] border border-gray-300 shadow-lg transition-all duration-300 transform scale-0 group-hover:scale-100 w-[300px] ${
                     isDropdownOpen ? "scale-100 " : ""
                   }`}>
-                  <li className="menu-item  px-4 py-2">
+                  <li className="menu-item  px-4 py-2 ">
                     <a href="https://gripetech.com/demo/introduction/">
                       অনলাইন ভর্তি আবেদন
                     </a>
@@ -117,7 +117,7 @@ const NavBar = () => {
                 </ul>
               </li>
               <li className="relative group  menu-item">
-                <a className=" rounded-md py-1 px-3 " onClick={toggleDropdown}>
+                <a className=" rounded-md py-1 px-3 z-[500]" onClick={toggleDropdown}>
                   অন্যান্য…
                 </a>
                 <ul
